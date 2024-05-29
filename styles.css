@@ -1,8 +1,12 @@
 @font-face {
-    font-family: 'segoeitalic';
-    src: url(/fonts/SegoeUI-Italic.ttf)
+    font-family: 'segoe';
+    src: url(/fonts/SegoeUI-Italic.ttf);
 }
-
+@font-face {
+    font-family: 'segoe';
+    src: url(/fonts/SegoeUI-Light.ttf);
+    font-weight: 300;
+}
 body { 
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +14,9 @@ body {
 .main {
     height: 100vh;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
 }
+
 .main__logo {
     margin-left: 162px;
     margin-top: 60px;
@@ -42,25 +47,23 @@ body {
 }
 .main__line-n-btn a {
     text-decoration: none;
-    font-family: segoeitalic;
+    font-family: segoe;
     font-size: 18px;
     font-weight: 300;
+    font-style: italic;
     color:#272727;
     margin-left: 38px;
 }
 .main__ring {
-    display: flex;
-    height: 170px;
-    margin-top: 427px;
-    z-index: 1;
     position: relative;
-    left: 94px;
-
+    bottom: 170px;
+    left: 731px;
 }
 .main__right-side {
     width: 562px;
     height: 100vh;
-    display: flex;
+    margin-left: 241px;
+    
     background-color: #272727;
 }
 .main__menu {
@@ -79,7 +82,7 @@ body {
 }
 .main__icon-number {
     height: 12px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .main__burger {
     margin-top: 77px;
@@ -88,4 +91,5 @@ body {
     height: 16px;
     margin-left: 80px;
 }
+
 
