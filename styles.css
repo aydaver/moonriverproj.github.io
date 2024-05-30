@@ -1,20 +1,33 @@
 @font-face {
     font-family: 'segoe';
-    src: url(/fonts/SegoeUI-Italic.ttf);
+    src: url(/fonts/segoe/SegoeUI-Italic.ttf);
 }
 @font-face {
     font-family: 'segoe';
-    src: url(/fonts/SegoeUI-Light.ttf);
+    src: url(/fonts/segoe/SegoeUI-Light.ttf);
     font-weight: 300;
 }
+@font-face {
+    font-family: 'segoe';
+    src: url(/fonts/segoe/SegoeUI-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'futura';
+    src: url(/fonts/futura/FuturaPT-Light.ttf);
+    font-weight: 300;
+}
+
+
+
 body { 
     box-sizing: border-box;
     margin: 0;
 }
 .main {
-    height: 100vh;
+    height: 1024px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .main__logo {
@@ -54,14 +67,10 @@ body {
     color:#272727;
     margin-left: 38px;
 }
-.main__ring {
-    position: relative;
-    bottom: 170px;
-    left: 731px;
-}
+
 .main__right-side {
     width: 562px;
-    height: 100vh;
+    height: 1024px;
     margin-left: 241px;
     
     background-color: #272727;
@@ -91,5 +100,106 @@ body {
     height: 16px;
     margin-left: 80px;
 }
-
-
+.main__ring {
+    position: relative;
+    top: 331px;
+    right: 147px;
+}
+.main__lang-switch {
+    margin-left: 162px;
+    margin-top: 360px;
+}
+.main__lang-btn {
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: segoe;
+    font-weight: 600;
+    color: #272727;
+    font-size: 16px;
+}
+.main__lang-btn:hover {
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: segoe;
+    font-weight: 600;
+    color: #c4c4c4;
+}
+.main__special {
+    width: min-content;
+    white-space: nowrap;
+    text-align: end;
+    position: relative;
+    left: 202px;
+    top: 620px;
+}
+.main__trinity-ring {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: futura;
+    font-size: 16px;
+}
+.main__trinity-ring-descr{
+    font-family: futura;
+    font-size: 14px;
+    color: #c2c2c2;
+}
+.main__trinity-ring-price {
+    font-family: segoe;
+    font-weight: 300;
+    font-size: 18px;
+    color: #efc58b;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+}
+.second__full-title {
+    position: relative;
+    top: 227px; 
+}
+.second__formen {
+    position: relative;
+    margin: 20px 0;
+    width: 745px;
+    height: 587px;
+    text-align: center;
+}
+.second__background-men {
+    position: absolute;
+    left: 0;
+    width: 750px;
+    height: 587px;
+    filter: brightness(70%) contrast(85%);
+}
+.second__background-women {
+    position: absolute;
+    right: 0;
+    width: 745px;
+    height: 587px;
+    filter: brightness(70%) contrast(85%);
+}
+.second__title{
+    font-size: 64px;
+    font-family: forum;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+}
+.second__subtitle{
+    font-size: 24px;
+    font-family: futura;
+    font-weight: 300;
+    color: white;
+    margin: 0%;
+}
+.second__border {
+    width: 130px;
+    margin-top: 23px;
+}
+.second__forwomen {
+    margin: 20px 0;
+    width: 750px;
+    height: 587px;
+    background-size: cover;
+    text-align: center;
+}
