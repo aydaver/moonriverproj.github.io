@@ -23,6 +23,7 @@
 body { 
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 .main {
     height: 1024px;
@@ -124,7 +125,7 @@ body {
     font-weight: 600;
     color: #c4c4c4;
 }
-.main__special {
+.product {
     width: min-content;
     white-space: nowrap;
     text-align: end;
@@ -132,18 +133,18 @@ body {
     left: 202px;
     top: 620px;
 }
-.main__trinity-ring {
+.product-name {
     text-decoration: none;
     color: #ffffff;
     font-family: futura;
     font-size: 16px;
 }
-.main__trinity-ring-descr{
+.product-descr{
     font-family: futura;
-    font-size: 14px;
+    font-size: 18px;
     color: #c2c2c2;
 }
-.main__trinity-ring-price {
+.product-price {
     font-family: segoe;
     font-weight: 300;
     font-size: 18px;
@@ -202,4 +203,259 @@ body {
     height: 587px;
     background-size: cover;
     text-align: center;
+}
+.map {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    background-color: #272727;
+}
+.map__descript {
+    background-color: #272727;
+    width: 750px;
+}
+.map__container {
+    margin: 171px 161px 0;
+}
+.map__title {
+    font-family: forum;
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 16px;
+}
+.map__subtitle {
+    font-family: futura;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
+.white-input {
+    background-color: #272727;
+    border: none;
+    font-family: futura;
+    font-size: 18px;
+    outline: none;
+}
+.map__adress-input {
+    margin-top: 60px;
+}
+.white-button {
+    margin-left: 225px;
+}
+.white-border {
+    border-width: 1.8px;
+}
+.map__map {
+    display: flex;
+    width: 770px;
+    height: 640px;
+    background-image: url(/images/map.png);
+    background-size: cover;
+    position: relative;
+}
+.map__icon-1 {
+    position: absolute;
+    left: 280px;
+    top: 190px;
+}
+.map__street {
+    position: absolute;
+    left: 325px;
+    top: 142px;
+}
+.map__icon-2 {
+    position: absolute;
+    left: 93px;
+    top: 160px;
+}
+.map__icon-3 {
+    position: absolute;
+    left: 400px;
+    top: 250px;
+}
+.map__icon-4 {
+    position: absolute;
+    left: 285px;
+    top: 440px;
+}
+.map__icon-5 {
+    position: absolute;
+    left: 510px;
+    top: 380px;
+}
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog__square {
+    background-color: #EDEDED;
+    height: 400px;
+    width: 400px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.product-name-1 {
+    text-decoration: none;
+    color: #272727;
+    font-weight: bold;
+    font-family: futura;
+    font-size: 16px;
+}
+.product-descr-1 {
+    font-family: futura;
+    font-size: 18px;
+    color: #757575;
+}
+.catalog__product-container {
+    margin-top: 67px;
+    margin-left: 30px;
+}
+.catalog-image {
+    margin-left: 70px;
+    margin-top: 47px;
+}
+.catalog__necklace {
+    width: 675px;
+    height: 860px;
+    background-image: url(/images/necklace.png);
+    background-size: cover;
+}
+.catalog__necklace > .catalog__product-container {
+    margin-top: 735px;
+}
+.product-descr-2 {
+    font-family: futura;
+    font-size: 18px;
+    color: #e7e7e7;
+}
+.social-media {
+    background-color: #272727;
+    margin: 0;
+    padding: 100px 0;
+}
+.social-media__title {
+    font-family: forum;
+    font-size: 48px;
+    font-weight: 400;
+    margin-left: 162px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: #ffffff;
+}
+.social-media__carousel{
+    display: flex;
+    justify-content: space-between;
+}
+.social-media__picture-last {
+    margin-right: 0;
+}
+.social-media__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 162px 0;
+}
+.social-media__icon {
+    margin-right: 20px;
+}
+.social-media__button {
+    margin-left: 50px;
+}
+.social-media__dots {
+    padding-bottom: 10px;
+}
+.phone-email {
+    display:flex;
+}
+.phone-email__contacts {
+   margin: 180px 0 0 220px;
+}
+.phone-email__phone-title, .phone-email__email-title{
+    font-family: futura;
+    font-weight: bold;
+    font-size: 18px;
+    color: #272727;
+    margin-top: 0;
+}
+.phone-email__phone {
+    font-family: futura;
+    font-weight: 400;
+    font-size: 22px;
+    color: #959595;
+    margin-bottom: 110px;
+}
+.phone-email__email-input {
+    background-color: #ffffff;
+    border: none;
+    font-family: futura;
+    font-size: 22px;
+    margin-top: 30px;
+    outline: none;
+}
+.phone-email__border {
+    width: 280px;
+    position: relative;
+    right: 12px;
+    color:#272727;
+    border-width: 1.5px;
+    border-style: solid;
+}
+.phone-email__button {
+    margin-left: 45px;
+}
+.footer {
+    background-color: #272727;
+    padding: 90px 0;
+}
+.footer__menu {
+    display: flex;
+    margin: 0 162px;
+    justify-content: space-between;
+}
+.footer__menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: futura;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.footer__other {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+    align-items: center;
+}
+.footer__contacts{
+    display: flex;
+    align-items: first baseline;
+}
+.footer__input {
+    max-width: 280px;
+    margin-top: 19px;
+}
+.footer__button {
+    margin-left: 70px;
+}
+.footer__stores {
+    margin-top: 13px;
+}
+.footer__store-icon {
+    margin-right: 7px;
+}
+.footer__email-title, .footer__phone-title {
+    font-family: futura;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+.footer__email-stores {
+    margin-left: 80px;
+}
+.footer__phone {
+    font-family: futura;
+    font-weight: 300;
+    font-size: 18px;
+    color: #c2c2c2;
+    margin-top: 15px;
 }
